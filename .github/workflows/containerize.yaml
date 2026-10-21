@@ -8,6 +8,7 @@ jobs:
       - uses: actions/setup-node@v7
       - run: npm clean-install
       - run: npm run test
+      - run: npm run test
   build-push:
     needs: test
     runs-on: ubuntu-latest
